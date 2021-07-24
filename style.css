@@ -3,10 +3,19 @@
     margin: 0;
 }
 
+body {
+    background-color: rgba(31, 166, 187, 0.6);
+}
+
 #game {
     width: 500px;
     height: 200px;
     border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(97, 42, 3, 0.20);
 }
 
 #character {
@@ -40,4 +49,22 @@
 @keyframes block {
     0%{left: 480px;}
     100%{left: -40px;}
+}
+
+button {
+    padding: 1rem 2rem;
+    margin: 4rem 10rem;
+    position: absolute;
+    left: 42%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(213, 95, 11, 0.95);
+    color: white;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+    font-size: 30px;
 }

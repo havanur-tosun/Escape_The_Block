@@ -1,5 +1,7 @@
-var character = document.getElementById("character");
-var block = document.getElementById("block");
+let character = document.getElementById("character");
+let block = document.getElementById("block");
+let restart = document.getElementById("restart");
+
 
 function jump() {
     if(character.classList != "animate") {
@@ -19,3 +21,8 @@ var checkDead = setInterval(function(){
         alert("u lose.")
     }
 },10);
+
+
+restart.addEventListener("click", function(){
+    location.reload();
+});
